@@ -1,0 +1,55 @@
+
+@font-face
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400
+  src: local('Josefin Sans'), url('../font/Josefin-Sans.woff') format('woff');
+
+seaColor = hsl(240,100,85)
+
+svg
+  background hsl(240,90,99)
+  text
+    font-size 300px
+    font-family 'Josefin Sans'
+    fill seaColor
+
+  circle
+    fill seaColor
+    -webkit-transform scale(1)
+    -webkit-transition-duration 0.2s
+    -webkit-transition-timing-function ease-out
+
+    &#c1
+      -webkit-transform-origin 440px 330px
+      opacity 0.6
+      &:hover
+        opacity 0.2
+        -webkit-transform scale(3.4)
+
+    &#c2
+      -webkit-transform-origin 480px 140px
+      opacity 0.4
+      &:hover
+        -webkit-transform scale(1.5)
+        opacity 0.3
+
+    &#c3
+      -webkit-transform-origin 570px 200px
+      &:hover
+        -webkit-transform scale(1.4)
+
+    &#c4
+      -webkit-transform-origin 590px 310px
+      &:hover
+        -webkit-transform scale(1.3)
+
+    &#c5
+      -webkit-transform-origin 600px 360px
+      opacity 0.2
+      &:hover
+        -webkit-transform scale(2)
+        opacity 0.2
+
+    &:hover
+      box-shadow 2px 1px 4px hsl(240,70,80)
